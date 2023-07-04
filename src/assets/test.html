@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test_8</title>
+	<style>
+		.a {
+			position: absolute;
+			width: 2200px;
+			height: 1100px;
+			background-color: #141111;
+			margin: 0 auto;
+			font-size: 40px;
+			padding: 50px;
+			border: #E6C3C4;
+			background-image: url("beiban.png");
+			background-size: 1440px 720px;
+			background-repeat: no-repeat;
+			background-origin: border-box;
+			z-index: -1;
+		}
+
+		.a1 {
+			position: relative;
+			left: 18px;
+			top: 60px;
+			z-index: -1;
+		}
+
+		.a2 {
+			position: relative;
+			left: 34px;
+			top: 120px;
+			z-index: -1;
+		}
+
+		.a3 {
+			position: relative;
+			left: 34px;
+			top: 195px;
+			z-index: -1;
+		}
+
+		.a4 {
+			position: relative;
+			left: 34px;
+			top: 270px;
+			z-index: -1;
+		}
+
+		.a5 {
+			position: relative;
+			left: 34px;
+			top: 345px;
+			z-index: -1;
+		}
+
+		#mytime {
+			position: relative;
+			left: 1150px;
+			top: -352px;
+			font-size: 25px;
+			color: #7B8796
+		}
+
+		.zhuanxiangjiantou {
+			position: relative;
+			left: 835px;
+			top: -140px;
+			z-index: -1;
+		}
+
+		.shisu {
+			font-size: 60px;
+			font-weight: 600;
+			position: relative;
+			left: 180px;
+			top: -339px;
+			color: #FFFFFF;
+		}
+
+		.juli {
+			font-size: 45px;
+			font-weight: 600;
+			position: relative;
+			left: 690px;
+			top: -460px;
+			color: #FFFFFF;
+		}
+
+		.zhuangxiangtishi {
+			font-size: 25px;
+			font-weight: 350;
+			position: relative;
+			left: 690px;
+			top: -500px;
+			color: #FFFFFF;
+		}
+
+		.xinlv {
+			font-size: 42px;
+			font-weight: 600;
+			position: relative;
+			left: 210px;
+			top: -530px;
+			color: #FFFFFF;
+		}
+
+		.tiwen {
+			font-size: 21px;
+			font-weight: 550;
+			position: relative;
+			left: 213px;
+			top: -540px;
+			color: #FFFFFF;
+		}
+
+		.jiujing {
+			font-size: 21px;
+			font-weight: 550;
+			position: relative;
+			left: 308px;
+			top: -590px;
+			color: #FFFFFF;
+		}
+
+		.xueyang {
+			font-size: 21px;
+			font-weight: 550;
+			position: relative;
+			left: 447px;
+			top: -640px;
+			color: #FFFFFF;
+		}
+
+		.shangyiqu {
+			position: relative;
+			left: 215px;
+			top: -440px;
+			z-index: -1;
+		}
+
+		.zhanting {
+			position: relative;
+			left: 265px;
+			top: -470px;
+			z-index: -1;
+		}
+
+		.xiayiqu {
+			position: relative;
+			left: 325px;
+			top: -502px;
+			z-index: -1;
+		}
+	</style>
+	<script type="text/javascript"
+		src="http://api.map.baidu.com/api?v=2.0&ak=Y2oj9NAs229CH4AgEgBvTY4MnFxGgYHX"></script>
+</head>
+
+<body>
+	<div class="a">
+	</div>
+	<div class="a1">
+		<img width=80px height=80px src="左侧栏1.png">
+	</div>
+	<div class="a2">
+		<img width=51px height=51px src="左侧栏2.png">
+	</div>
+	<div class="a3">
+		<img width=51px height=51px src="左侧栏3.png">
+	</div>
+	<div class="a4">
+		<img width=51px height=51px src="左侧栏4.png">
+	</div>
+	<div class="a5">
+		<img width=51px height=51px src="左侧栏5.png">
+	</div>
+	<div class="zhuanxiangjiantou">
+		<img width=60px height=72px src="直行.png">
+	</div>
+	<div class="time">
+		<span id="mytime"></span>
+		<script>
+			function showTime() {
+				nowtime = new Date();//
+				year = nowtime.getFullYear();//获取当前完整的年份
+				month = nowtime.getMonth() + 1;//获取当前月份
+				date = nowtime.getDate();//获取当前日
+				document.getElementById("mytime").innerText = year + "/" + month + "/" + date + " " + nowtime.toLocaleTimeString();
+			}
+			function showTime2() {
+				document.getElementById("mytime").innerText = new Date();
+			}
+			setInterval('showTime()', 1000);//1秒更新一次
+		</script>
+	</div>
+	<div class="shisu">
+		<p>80</p>
+	</div>
+	<div class="juli">
+		<p>450</p>
+	</div>
+	<div class="zhuangxiangtishi">
+		<p>直行</p>
+	</div>
+	<div class="xinlv">
+		<p>68</p>
+	</div>
+	<div class="tiwen">
+		<p>37℃</p>
+	</div>
+	<div class="jiujing">
+		<p>250ppm</p>
+	</div>
+	<div class="xueyang">
+		<p>95％</p>
+	</div>
+	<div class="shangyiqu">
+		<img width=22px height=22px src="上一曲.png">
+	</div>
+	<div class="zhanting">
+		<img width=32px height=32px src="暂停.png">
+	</div>
+	</div>
+	<div class="xiayiqu">
+		<img width=22px height=22px src="下一曲.png">
+	</div>
+</body>
+
+
+
+</html>
