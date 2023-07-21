@@ -5,6 +5,9 @@
 npm install
 ```
 
+#引入vue-baidu-map
+npm i vue-baidu-map
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
